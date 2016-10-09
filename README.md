@@ -38,7 +38,8 @@ The distributed operation layer (DOL) is a software development framework to pro
  - 运行configure (能根据系统的环境设置一下参数，用于编译)  
  `$ ../configure CXX=g++ --disable-async-updates`  
 
-       结果：![Alt text](https://github.com/Oujialing/ES2016_14353244/blob/master/pic/1.png)
+       结果：  
+![Alt text](https://github.com/Oujialing/ES2016_14353244/blob/master/pic/1.png)
 
 
           
@@ -48,7 +49,8 @@ The distributed operation layer (DOL) is a software development framework to pro
  - 编译结束后  
 `$ cd ..`  
   `$ ls`  
-目录如下图：![Alt text](https://github.com/Oujialing/ES2016_14353244/blob/master/pic/2.png)
+目录如下图：  
+![Alt text](https://github.com/Oujialing/ES2016_14353244/blob/master/pic/2.png)
 
 
       记录当前路径: ![Alt text](https://github.com/Oujialing/ES2016_14353244/blob/master/pic/3.png)
@@ -64,7 +66,8 @@ The distributed operation layer (DOL) is a software development framework to pro
 `<property name="systemc.inc" value="YYY/include"/>`  
 `<property name="systemc.lib" value="YYY/lib-linux/libsystemc.a"/>`  
 把YYY改成上页pwd的结果（如果是64位系统，要把lib-linux改成lib-linux64）  
-如下图：![Alt text](https://github.com/Oujialing/ES2016_14353244/blob/master/pic/4.png)
+如下图：  
+![Alt text](https://github.com/Oujialing/ES2016_14353244/blob/master/pic/4.png)
 
  - 编译  
 `$ ant -f build_zip.xml all`  
