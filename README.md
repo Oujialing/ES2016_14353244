@@ -36,9 +36,9 @@ The distributed operation layer (DOL) is a software development framework to pro
  `$ cd objdir`
 
  - 运行configure (能根据系统的环境设置一下参数，用于编译)  
- `$ ../configure CXX=g++ --disable-async-updates`
+ `$ ../configure CXX=g++ --disable-async-updates`  
 
-          结果：![Alt text](https://github.com/Oujialing/ES2016_14353244/blob/master/pic/1.png)
+       结果：![Alt text](https://github.com/Oujialing/ES2016_14353244/blob/master/pic/1.png)
 
 
           
