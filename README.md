@@ -4,15 +4,15 @@ The distributed operation layer (DOL) is a software development framework to pro
 
 ##How to install
 1. 安装必要环境  
-`$ sudo apt-get update`
-` $ sudo apt-get install ant`
-`$ sudo apt-get install openjdk-7-jdk`
-` $ sudo apt-get install unzip`
+`$ sudo apt-get update`  
+` $ sudo apt-get install ant`  
+`$ sudo apt-get install openjdk-7-jdk`  
+` $ sudo apt-get install unzip`  
 
 2. 下载文件到虚拟机  
  - 方法一：从主机复制到虚拟机。
  - 方法二：在虚拟机上下载  
- `$ sudo wget http://www.accellera.org/images/downloads/standards/systemc/systemc-2.3.1.tgz`
+ `$ sudo wget http://www.accellera.org/images/downloads/standards/systemc/systemc-2.3.1.tgz`  
 ` $ sudo wget http://www.tik.ee.ethz.ch/~shapes/downloads/dol_ethz.zip`
 
 3. 解压文件
@@ -38,7 +38,7 @@ The distributed operation layer (DOL) is a software development framework to pro
  - 运行configure (能根据系统的环境设置一下参数，用于编译)  
  `$ ../configure CXX=g++ --disable-async-updates`
 
-          结果：![Alt text](https://github.com/Oujialing/ES2016_14353244/blob/master/pic/K)R49WZ%5B8J%5BJX%7DB%603%609ZGUE.png)
+          结果：![Alt text](https://github.com/Oujialing/ES2016_14353244/blob/master/pic/1.png)
 
 
           
@@ -48,10 +48,10 @@ The distributed operation layer (DOL) is a software development framework to pro
  - 编译结束后  
 `$ cd ..`
   `$ ls`
-目录如下图：![Alt text](https://github.com/Oujialing/ES2016_14353244/blob/master/pic/R4KGY1XP%7D6WF7E88YZB)04S.png)
+目录如下图：![Alt text](https://github.com/Oujialing/ES2016_14353244/blob/master/pic/2.png)
 
 
-          记录当前路径: ![Alt text](https://github.com/Oujialing/ES2016_14353244/blob/master/pic/ZI6RXZ5IEGRXUFR@O1A1QLY.png)
+          记录当前路径: ![Alt text](https://github.com/Oujialing/ES2016_14353244/blob/master/pic/3.png)
 
 
 
@@ -64,18 +64,18 @@ The distributed operation layer (DOL) is a software development framework to pro
 `<property name="systemc.inc" value="YYY/include"/>`
 `<property name="systemc.lib" value="YYY/lib-linux/libsystemc.a"/>`
 把YYY改成上页pwd的结果（如果是64位系统，要把lib-linux改成lib-linux64）
-如下图：![Alt text](https://github.com/Oujialing/ES2016_14353244/blob/master/pic/K%25J0VGM82E%60Y)%7B70%7BJQHRSY.png)
+如下图：![Alt text](https://github.com/Oujialing/ES2016_14353244/blob/master/pic/4.png)
 
  - 编译  
 `$ ant -f build_zip.xml all`
-编译成功：![Alt text](https://github.com/Oujialing/ES2016_14353244/blob/master/pic/K(XWK%40SU%40MGT9E6RY(CRS7J.png)
+编译成功：![Alt text](https://github.com/Oujialing/ES2016_14353244/blob/master/pic/5.png)
 
  - 试试运行第一个例子  
 `$ cd build/bin/main`
 `$ ant -f runexample.xml -Dnumber=1`
-运行结果如下图所示：![Alt text](https://github.com/Oujialing/ES2016_14353244/blob/master/pic/NGWX9SV3{UBD74_T9G_MERG.png)
+运行结果如下图所示：![Alt text](https://github.com/Oujialing/ES2016_14353244/blob/master/pic/6.png)
 
-       查看运行结果：![Alt text](https://github.com/Oujialing/ES2016_14353244/blob/master/pic/BK~%24Z%7D3T)27%5DCE%5BXZ51_JC2.png)
+       查看运行结果：![Alt text](https://github.com/Oujialing/ES2016_14353244/blob/master/pic/7.png)
 
 ##Experimental experience
  - 按照步骤一步一步安装DOL环境，在不断网的情况下就可以顺利配置成功。
