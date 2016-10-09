@@ -46,12 +46,12 @@ The distributed operation layer (DOL) is a software development framework to pro
  `$ sudo make install`
 
  - 编译结束后  
-`$ cd ..`
-  `$ ls`
+`$ cd ..`  
+  `$ ls`  
 目录如下图：![Alt text](https://github.com/Oujialing/ES2016_14353244/blob/master/pic/2.png)
 
 
-          记录当前路径: ![Alt text](https://github.com/Oujialing/ES2016_14353244/blob/master/pic/3.png)
+      记录当前路径: ![Alt text](https://github.com/Oujialing/ES2016_14353244/blob/master/pic/3.png)
 
 
 
@@ -62,13 +62,14 @@ The distributed operation layer (DOL) is a software development framework to pro
  - 修改build_zip.xml文件  
 找到下面这段话，就是说上面编译的systemc位置在哪里，  
 `<property name="systemc.inc" value="YYY/include"/>`  
-`<property name="systemc.lib" value="YYY/lib-linux/libsystemc.a"/>`
-把YYY改成上页pwd的结果（如果是64位系统，要把lib-linux改成lib-linux64）
+`<property name="systemc.lib" value="YYY/lib-linux/libsystemc.a"/>`  
+把YYY改成上页pwd的结果（如果是64位系统，要把lib-linux改成lib-linux64）  
 如下图：![Alt text](https://github.com/Oujialing/ES2016_14353244/blob/master/pic/4.png)
 
  - 编译  
 `$ ant -f build_zip.xml all`  
-编译成功：![Alt text](https://github.com/Oujialing/ES2016_14353244/blob/master/pic/5.png)
+编译成功：  
+![Alt text](https://github.com/Oujialing/ES2016_14353244/blob/master/pic/5.png)
 
  - 试试运行第一个例子  
 `$ cd build/bin/main`  
