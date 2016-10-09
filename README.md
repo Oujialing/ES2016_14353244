@@ -3,15 +3,15 @@
 The distributed operation layer (DOL) is a software development framework to program parallel applications. The DOL allows to specify applications based on the Kahn process network model of computation and features a simulation engine based on systemC. Moreover, the DOL provides an XML-based specification format to describe the implementation of a parallel application on a multi-processor systems, including binding and mapping.
 
 ##How to install
-1. 安装必要环境
+1. 安装必要环境  
 `$ sudo apt-get update`
 ` $ sudo apt-get install ant`
 `$ sudo apt-get install openjdk-7-jdk`
 ` $ sudo apt-get install unzip`
 
-2. 下载文件到虚拟机
+2. 下载文件到虚拟机  
  - 方法一：从主机复制到虚拟机。
- - 方法二：在虚拟机上下载
+ - 方法二：在虚拟机上下载  
  `$ sudo wget http://www.accellera.org/images/downloads/standards/systemc/systemc-2.3.1.tgz`
 ` $ sudo wget http://www.tik.ee.ethz.ch/~shapes/downloads/dol_ethz.zip`
 
@@ -60,22 +60,22 @@ The distributed operation layer (DOL) is a software development framework to pro
  - 进入刚刚dol的文件夹  
 `$ cd ../dol`
  - 修改build_zip.xml文件  
-找到下面这段话，就是说上面编译的systemc位置在哪里，
+找到下面这段话，就是说上面编译的systemc位置在哪里，  
 `<property name="systemc.inc" value="YYY/include"/>`
 `<property name="systemc.lib" value="YYY/lib-linux/libsystemc.a"/>`
 把YYY改成上页pwd的结果（如果是64位系统，要把lib-linux改成lib-linux64）
-如下图：![Alt text](https://github.com/Oujialing/ES2016_14353244/blob/master/pic/KJ0VGM82E`Y{70{JQHRSY.png)
+如下图：![Alt text](https://github.com/Oujialing/ES2016_14353244/blob/master/pic/K%25J0VGM82E%60Y)%7B70%7BJQHRSY.png)
 
  - 编译  
 `$ ant -f build_zip.xml all`
-编译成功：![Alt text](https://github.com/Oujialing/ES2016_14353244/blob/master/pic/KXWK@SU@MGT9E6RYCRS7J.png)
+编译成功：![Alt text](https://github.com/Oujialing/ES2016_14353244/blob/master/pic/K(XWK%40SU%40MGT9E6RY(CRS7J.png)
 
  - 试试运行第一个例子  
 `$ cd build/bin/main`
 `$ ant -f runexample.xml -Dnumber=1`
 运行结果如下图所示：![Alt text](https://github.com/Oujialing/ES2016_14353244/blob/master/pic/NGWX9SV3{UBD74_T9G_MERG.png)
 
-       查看运行结果：![Alt text](https://github.com/Oujialing/ES2016_14353244/blob/master/pic/BK~$Z}3T27]CE[XZ51_JC2.png)
+       查看运行结果：![Alt text](https://github.com/Oujialing/ES2016_14353244/blob/master/pic/BK~%24Z%7D3T)27%5DCE%5BXZ51_JC2.png)
 
 ##Experimental experience
  - 按照步骤一步一步安装DOL环境，在不断网的情况下就可以顺利配置成功。
