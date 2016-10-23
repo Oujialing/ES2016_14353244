@@ -71,10 +71,10 @@
       `<source type="c" location="consumer.c"/>`
 `    </process>`
  
-    把`<variable value="3" name="N">`该为`<variable value="2" name="N">`即可编译运行。
+    把`<variable value="3" name="N">`该为`<variable value="2" name="N">`即可编译运行。  
 运行结果：  
 .dot的图：  
-![Alt text](https://github.com/Oujialing/ES2016_14353244/blob/master/pic/3-2-1.png)  
+![Alt text](https://github.com/Oujialing/ES2016_14353244/blob/master/pic/3-2-1.jpg)  
 命令行的图：  
 ![Alt text](https://github.com/Oujialing/ES2016_14353244/blob/master/pic/3-2.png)  
 
