@@ -91,7 +91,7 @@
 
 - 定义一个进程  
 
-		  <!-- processes -->
+		<!-- processes -->
 		  <process name="generator"> 
 		    <port type="output" name="1"/>
 		    <source type="c" location="generator.c"/>
@@ -110,7 +110,8 @@
   定义了模块名，端口名，他们对应的端口。有几个端口就有定义几个port。generator、consumer、square是模块名称。1和2是端口名称。input和output是端口类型。
   
 - 通道定义  
-		  <!-- sw_channels -->
+
+                 <!-- sw_channels -->
 		  <sw_channel type="fifo" size="10" name="C1">
 		    <port type="input" name="0"/>
 		    <port type="output" name="1"/>
@@ -124,7 +125,8 @@
 
  
 - 模块连接定义  
-		  <!-- connections -->
+ 
+               <!-- connections -->
 		  <connection name="g-c">
 		    <origin name="generator">
 		      <port name="1"/>
@@ -196,7 +198,7 @@
     把`<variable value="3" name="N">`该为`<variable value="2" name="N">`即可编译运行。
 运行结果：  
 .dot的图：  
-![Alt text](https://github.com/Oujialing/ES2016_14353244/blob/master/pic/3-2-1.png)  
+![Alt text](https://github.com/Oujialing/ES2016_14353244/blob/master/pic/3-2-1.jpg)  
 命令行的图：  
 ![Alt text](https://github.com/Oujialing/ES2016_14353244/blob/master/pic/3-2.png)  
 
