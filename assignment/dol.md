@@ -49,32 +49,32 @@
    修改代码  
    用gedit打开example2.xml  
 
-    <variable value="3" name="N"/>
+   ` <variable value="3" name="N"/>`
 
-    <!-- instantiate resources -->
-    <process name="generator">
-      <port type="output" name="10"/>
-      <source type="c" location="generator.c"/>
-    </process>
+   ` <!-- instantiate resources -->`
+   ` <process name="generator">`
+     ` <port type="output" name="10"/>`
+      `<source type="c" location="generator.c"/>`
+   ` </process>`
 
-    <iterator variable="i" range="N">
-      <process name="square">
-        <append function="i"/>
-        <port type="input" name="0"/>
-        <port type="output" name="1"/>
-        <source type="c" location="square.c"/>
-      </process>
-    </iterator>
+    `<iterator variable="i" range="N">`
+      `<process name="square">`
+        `<append function="i"/>`
+        `<port type="input" name="0"/>`
+        `<port type="output" name="1"/>`
+        `<source type="c" location="square.c"/>`
+     ` </process>`
+   ` </iterator>`
 
-    <process name="consumer">
-      <port type="input" name="100"/>
-      <source type="c" location="consumer.c"/>
-    </process>
+    `<process name="consumer">`
+      `<port type="input" name="100"/>`
+      `<source type="c" location="consumer.c"/>`
+`    </process>`
  
-    把`<variable value="3" name="N">`该为`<variable value="2" name="N">`即可编译运行。
+    把`<variable value="3" name="N">`该为`<variable value="2" name="N">`即可编译运行。  
 运行结果：  
 .dot的图：  
-![Alt text](https://github.com/Oujialing/ES2016_14353244/blob/master/pic/3-2-1.png)  
+![Alt text](https://github.com/Oujialing/ES2016_14353244/blob/master/pic/3-2-1.jpg)  
 命令行的图：  
 ![Alt text](https://github.com/Oujialing/ES2016_14353244/blob/master/pic/3-2.png)  
 
