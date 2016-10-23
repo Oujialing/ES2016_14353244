@@ -6,6 +6,7 @@
 2. 请求与保持条件：一个进程因请求资源而阻塞时，对持有的资源保持不放。
 3. 不剥夺条件：进程已获得的资源，在未使用完之前，不能剥夺其资源。
 4. 循环等待条件：若干进程之间形成一种头尾相连的循环等待资源的关系。
+
 ##实验代码分析
 
 1.  类A和类B  
@@ -62,6 +63,7 @@
 ![Alt text](https://github.com/Oujialing/ES2016_14353244/blob/master/pic/lab4-deadlock1.png)  
   
     ![Alt text](https://github.com/Oujialing/ES2016_14353244/blob/master/pic/lab4-deadlock2.png)  
+
 ##死锁的四个必要条件
 1. 互斥条件：一个资源只能被一个进程使用。
 2. 请求与保持条件：一个进程因请求资源而阻塞时，对持有的资源保持不放。
@@ -71,4 +73,6 @@
  - 死锁会随机，在linux系统和在windows系统下都不太一样，同样的代码在linux系统下怎么改count值都不会死锁，而在windows系统下，可以跑几次就死锁。  
  linux系统下：   
  ![Alt text](https://github.com/Oujialing/ES2016_14353244/blob/master/pic/lab4-deadlockn.png)  
+ Windows系统下：   
+    ![Alt text](https://github.com/Oujialing/ES2016_14353244/blob/master/pic/lab4-deadlock2.png)  
 
