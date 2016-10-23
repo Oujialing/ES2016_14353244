@@ -5,7 +5,7 @@
 
  - 其中src文件夹里有各种进程的功能定义（生产者，消费者，处理模块等）  
  ![Alt text](https://github.com/Oujialing/ES2016_14353244/blob/master/pic/3-1-3.png)
- - example1.xml是系统架构（模块连接方式定义）
+ - example1.xml是系统架构（模块连接方式定义）  
 ##实验代码分析
 ###example1代码分析
 1.src文件夹里  
